@@ -1,9 +1,9 @@
 <?php
-$connection = mysqli_connect(getenv('MYSQL_HOST'), 'user', 'password');
+$connection = mysqli_connect(getenv('MYSQL_HOST'), getenv('MYSQL_USER'), getenv('MYSQL_PASSWORD'));
 if (!$connection){
     die("Database Connection Failed" . mysqli_error($connection));
 }
-$select_db = mysqli_select_db($connection, 'mashlog_demo');
+$select_db = mysqli_select_db($connection, getenv('MYSQL_DATABASE'));
 if (!$select_db){
     die("Database Selection Failed" . mysqli_error($connection));
 }

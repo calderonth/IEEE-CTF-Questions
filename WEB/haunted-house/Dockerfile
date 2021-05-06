@@ -1,6 +1,6 @@
-FROM php:7.2-apache
+FROM php:8.0-apache-buster
 
-RUN apt-get update
+RUN apt-get update && apt upgrade -y
 RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 
 COPY 000-default.conf /etc/apache2/sites-available/000-default.conf

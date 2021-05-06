@@ -13,27 +13,27 @@ if(isset($_POST["form"]))
          
         case "0" : 
             
-            move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
+            move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever-" . $_FILES["file"]["name"]);
     
             break;
         
         
         case "1" :
             
-        move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
+        move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever-" . $_FILES["file"]["name"]);
 
 	    break;
         
         case "2" :            
                        
-	move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
+	move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever-" . $_FILES["file"]["name"]);
             
             break;
         
         
         default : 
             
-	move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
+	move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever-" . $_FILES["file"]["name"]);
         
     }    
         
@@ -57,7 +57,7 @@ if(isset($_POST["form"]))
 <body class="container">
 
 <div id="main">
-	<a class="btn" href="/haunted/hello/xaea12upload21aeax.php"><h1 class="h">Upload the Image Of 9 Gems</h1></a>
+	<a class="btn" href="/haunted/hello/21aeaxdaolpuxaea12.php"><h1 class="h">Upload the Image Of 9 Gems</h1></a>
 
     <form action="<?php echo('/haunted' . $_SERVER["SCRIPT_NAME"]);?>" method="POST" enctype="multipart/form-data">
 
@@ -76,38 +76,16 @@ if(isset($_POST["form"]))
 
     if(isset($_POST["form"]))
     {
-
         if(!$file_error)
         {
-        $file = fopen('images/.happyhalloween4ever' . $_FILES["file"]["name"] , "r") or exit("Unable to open the file!");
-	while(!feof($file))
-	{
-	$cmp = '<?php system(ls); ?>';
-	$check = fgets($file);
-	if(preg_match("/\.(php2|php3)$/", $_FILES["file"]["name"]))
-	{
-	if (strpos($check, "$cmp".PHP_EOL) !== false)
-	{
-	system('ls flag');
-	}
-	}
-	}
-	
-	fclose($file);
-	echo "Upload Success";
-//            echo "The image has been uploaded <a class=\"btn\" href=\"images/.happyhalloween4ever*" . $_FILES["file"]["name"] . "\" target=\"_blank\">HERE</a>";
-
+        	echo "<p>Upload Success </p>";
+            echo "<p>The image has been uploaded <a href=\"images/.happyhalloween4ever-" . $_FILES["file"]["name"] . "\" > HERE</a></p>";
         }
-
         else
         {
-
-            echo "<font color=\"black\">" . $file_error . "</font>";        
-
+            echo "<font color=\"black\">" . $file_error . "</font>";
         }
-
     }
-system('rm -rf images/.happyhalloween4ever*');
     ?>  
 </div>
       
