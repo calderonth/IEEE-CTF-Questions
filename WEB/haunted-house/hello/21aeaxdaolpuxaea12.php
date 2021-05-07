@@ -50,7 +50,7 @@ if(isset($_POST["form"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 </head>
-<link rel="stylesheet" href="/haunted/hello/tsohg.css" />
+<link rel="stylesheet" href="/haunted/hello/ghost.css" />
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Oswald|Montserrat&display=swap" rel="stylesheet">
 <link rel="icon" href="/haunted/hello/images/favicon.ico" />
 
