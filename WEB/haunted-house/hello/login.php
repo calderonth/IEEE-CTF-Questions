@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>LOGIN</title>
-<link rel="stylesheet" type="text/css" href="tsohg.css">
+<link rel="stylesheet" type="text/css" href="ghost.css">
 </head>
 <body class="container" id="body_bg">
 <div <div align="center">
@@ -29,7 +29,7 @@
         </table>
     </form>
 		</div>
-<center><a class="btn" href="/haunted/hello/tsohg.html">HOME</a></center>
+<center><a class="btn" href="/haunted/hello/ghost.html">HOME</a></center>
 <br><br><br><br><br><br>
 <br><br><br><br><br><br>
 <center><a class="btn" href="#">JUST LIKE SHAZAM! EVEN MY LAST NAME IS REALLY POWERFUL!</a></center>
