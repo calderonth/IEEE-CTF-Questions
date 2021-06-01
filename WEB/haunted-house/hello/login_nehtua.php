@@ -20,7 +20,7 @@ echo "<script type='text/javascript'>alert(window.location='/haunted/hello/21aea
 
 }else{
 echo "Invalid Login Credentials";
-echo "<script>alert(window.location='/haunted/hello/nigol.php#INVALID LOGIN CREDENTIALS')</script>";
+echo "<script>alert(window.location='/haunted/hello/login.php#INVALID LOGIN CREDENTIALS')</script>";
 }
 }
 ?>
